@@ -1,0 +1,106 @@
+what is SQL ?
+    SQL stands for Structured Query Language. 
+    It is a programming language used for managing and manipulating relational databases. 
+    SQL allows users to create, read, update, and delete data in a database.
+    It is widely used in various applications, including web development, data analysis, and database administration.
+    SQL provides a standardized way to interact with databases, making it easier for developers and analysts to work with data across different platforms and systems.
+what is data ?
+    Data is a raw facts. 
+    It can be in various forms, such as numbers, text, images, audio, and video. 
+what is information ?
+    infrormation is processe of meaaningful data.
+what is database ?
+    A databae is an organized collection of structured informatioin or data.
+RDMS
+    RDBMS stands for Relational Database Management System. is a software system that manages relational databases.
+    It is a type of database management system that organizes data into tables with rows and columns. 
+    RDBMS allows users to create, read, update, and delete data in a structured way using SQL.
+    Some popular RDBMS include MySQL, PostgreSQL, Oracle Database, and Microsoft SQL Server.
+Non-RDBMS
+    Non-RDBMS stands for Non-Relational Database Management System. is a software system that manages non-relational databases.
+    It is a type of database management system that does not organize data into tables with rows and columns.
+    Non-RDBMS allows users to create, read, update, and delete data.
+    Non-RDBMS databases are designed to handle unstructured or semi-structured data, such as documents, key-value pairs, graphs, and wide-column stores.
+    Some popular Non-RDBMS databases include MongoDB, Cassandra, Redis, and Neo4j.
+    
+                        RDBMS                                             Non-RDBMS
+    Organizes data into tables with rows and columns.   Does not organize data into tables with rows and columns.
+    Uses SQL for data manipulation.                     Uses various query languages or APIs for data manipulation. 
+    Suitable for structured data.                       Suitable for unstructured or semi-structured data.
+    Examples: MySQL, PostgreSQL, 
+    Oracle Database, Microsoft SQL Server.               Examples: MongoDB, Cassandra, Redis, Neo4j.
+
+                        SQL                                                Non-SQL
+    SQL stands for Structured Query Language.           Non-SQL refers to databases that do not use SQL for data manipulation.
+    SQL is a programming language used for managing     Uses various query Languages or APIs for data manipulation.
+    and manipulating relational databases.
+    SQL allows users to create, read, update, and       Non-SQL databases are designed to handle unstructured or semi-structured data.
+    delete  
+    examples: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.   Examples: MongoDB, Cassandra, Redis, Neo4j.
+
+SQL Statements
+    SQL statements or SQL queries are instructions that relational databases system unterstand. 
+    Some common SQL statements include:
+    - SELECT: Used to retrieve data from a database.
+    - INSERT: Used to add new data to a database.
+    - UPDATE: Used to modify existing data in a database.
+    - DELETE: Used to remove data from a database.
+    - CREATE: Used to create new tables or databases.
+    - DROP: Used to delete tables or databases.
+    - ALTER: Used to modify the structure of a database or table.
+    - JOIN: Used to combine rows from two or more tables based on a related column between them.
+    - WHERE: Used to filter records based on specified conditions.
+    - GROUP BY: Used to group rows that have the same values in specified columns into summary rows.
+    - ORDER BY: Used to sort the result set in ascending or descending order.
+
+SQL Commands
+    SQL commands are categorized into different types based on their functionality. 
+    Some common SQL command types include:
+    - Data Definition Language (DDL): Commands used to define and manage database structures, such as CREATE, DROP, and ALTER.
+    - Data Manipulation Language (DML): Commands used to manipulate data within the database, such as SELECT, INSERT, UPDATE, and DELETE.
+    - Data Control Language (DCL): Commands used to control access to the database, such as GRANT and REVOKE.
+    - Transaction Control Language (TCL): Commands used to manage transactions in the database, such as COMMIT and ROLLBACK.
+    - Data Query Language (DQL): Commands used to query data from the database, such as SELECT.
+
+                                                SQL Commands
+        DDL                     DML                      DCL                      TCL                      DQL
+        CREATE                  SELECT                   GRANT                    COMMIT                   SELECT
+        DROP                    INSERT                   REVOKE                   ROLLBACK
+        ALTER                   UPDATE
+        RENAME                  DELETE
+        TRUNCATE                MARGE
+
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);    - create a new table in the database with specified columns and data types.
+
+ALTER TABLE table_name
+ - ADD column_name datatype;    - add a new column to an existing table.
+ - MODIFY column_name datatype; - modify the data type of an existing column in a table.
+ = DROP COLUMN column_name;    - remove a column from an existing table.
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);    - insert new data into
+            or 
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);    - insert new data into a table without specifying column names (values must be in the same order as the columns in the table).
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;    - update existing data in a table based on specified conditions.
+
+DELETE FROM table_name
+WHERE condition;    - delete data from a table based on specified conditions.
+
+TRUNCATE TABLE table_name;    - remove all data from a table while keeping the table structure intact.
+DROP TABLE table_name;    - delete an entire table from the database, including its structure and data.
+
+CONSTRAINT constraint_name
+    PRIMARY KEY (column_name);    - define a primary key constraint on a column, ensuring that each value in the column is unique and not null.
+    FOREIGN KEY (column_name) REFERENCES other_table(column_name);    - define a foreign key constraint on a column, establishing a relationship between two tables.
+    UNIQUE (column_name);    - define a unique constraint on a column, ensuring that each value in the column is unique.
+    CHECK (condition);    - define a check constraint on a column, ensuring that values in the column meet a specified condition.
+    
