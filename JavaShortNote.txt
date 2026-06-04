@@ -1,0 +1,341 @@
+
+What is Java ?
+    Java is high-level,object-orientend programming language developed by Sun 
+Microsystems(now owed by Oracle) in 1995.
+    it is widely used for desktop,web,and mobile applications.
+
+Key features:
+    Platform Independent -> Write Once, Run Anywhere (WORA).
+    Object-Orientend -> Based on classes and object.
+    Multithreaded -> Supports concurrent programming.
+    Automatic Memory Management (via Garbage Collector).
+
+Java Development Enviroment:
+    JVM (Java Virtual MAchine)
+            JVM is the engine that runs java programs.
+            it converts Java bytecode(compiled code) into machine code(understandable by the OS).
+    JRE (Java Runtime Enviroment)
+            JRE = JVM + Libraries + other components
+            Provides Libraries and runtime needed to run java programs.
+    JDK (Java Development Kit)
+            Main toolkit for java development.
+            includes compiled and development tools.
+variable ?
+    in java varible is container that can store values.
+
+static variable ?
+    variable that are common to all objects of classes and belong to class itself.
+
+non static variable ?
+    variable that belong to each individual instances of a class.
+
+instances variable?
+    variable that inside the class and outside the method.
+
+Local variable?
+    variable that inside method 
+
+Method ?
+    Method is block of code that in business logic,reusable,once we write the code then call it anywhere.
+
+Access Modifier ?
+    it specify the visibling of the variable,methods,and classes
+    public,private,protector,default
+
+Array ?
+    Array is collection of similar data type stored in continguous memory location and access using single variable
+    with a index.
+
+
+IDE - Integrated Development Enviroment.
+
+oops ?
+    Object Orientend Programming System is programming approach that used to class and object design applications,
+modulor , making code reusable,easy to maintain.
+
+class ?
+    class is blueprint or templete for create object.
+    it defined to commanly proparties and behavier that all object to class shared.
+
+object ?
+    Object is instances of class.
+    if representing a real world entity and has state( values of its proparties) and behavier(actions) it can performs
+
+Constructor ?
+    Constructor is a specify method that used to initial Local variable to instances varible.
+
+Inheritance ?
+    if one object occuires all the propertice and behavious from its parents class then its called inheritance.
+    is a relationship.
+    Types of Inheritance
+        Single inheritance
+        Multilevel inheritance
+        Hierarchical inheritance
+        Multiple inheritance
+        Hybrid inheritance
+
+Polymorphism ?
+    the ability of a object to take many from.
+        Compile-time polymorphism (overloading method)
+        Run-time polymorphism (overrideing method)
+    
+    Compile-time polymorphism (Method Overloading)
+        where multiple method has same name but different parameters in same class is called 
+    Method Overloading.
+   
+    Runtime polymorphism (Method overrideing)
+        if subclass (child class) has same methods & parameters as in the parent class is called
+    Method Overrideing.
+
+this ->Current class refrence   
+super ->Praent class refrence   
+this() ->Current class Constructor
+super() ->Parent class Constructor
+
+Encapsulation ?
+    The proccess of binding data and method to single units is called
+Encapsulation. (Getted and Setter methods)
+
+Abstration ?
+    Hiding the internal implements and highlight the functionality to user.
+    it has 0%-100% abstration methods.
+    abstration method should have abstrat keyword in front and don't decleaed body 
+
+Interface ?
+    Interface is set of instruction or contract of object with the outside world.
+    it has only 100% abstrat method is simelar to class.
+        class extends Interface
+        Interface implements class
+        Interface extends Interface
+
+is a relationship ?
+    if one class is a type of other class. 
+    implements using extends or implements.
+
+has a relationship ?
+    if one class contains other class object.
+    implements using object refrences.
+
+String ?
+    String is collection or sequence of character that represented in text.
+    String is keyword that string class object are ummutable meaning once create value we can't change the value.
+
+StringBuffer ?
+    StringBuffer is collection or sequence of character that represented in text.
+    StringBuffer is keyword that StringBuffer class object are mutable meaning once create value we can change the value.
+
+StringBuilder ?
+    StringBuilder is collection or sequence of character that represented in text.
+    StringBuilder is keyword that StringBuilder class object are mutable meaning once create value we can change the value.
+
+        Feature             String              StringBuffer            StringBuilder     
+
+      Mutaibility         immutable               mutable                   mutable
+     Sychronizaion        Sychronized           Sychronized              not Sychronized
+     Thread Safety        Thread safe           Thread safe              not Thread safe
+     Performance           Slower                 slower                    faster
+
+Exceptions ?
+    Exceptions is a runtime error that occuires during program execution and disbuted normal flow of program.
+    in java we can handle the exception by using try/catch to prevent the program creash.
+
+        try - block that contains riskly code.
+        catch -block that handle exception throwns by the try block.
+        finally - block that executed the program if exception occuires or not. 
+        throw - only one exception can be throw
+        throws - exception progation and method signature.
+Checked Exception ?
+    Checked exception is also called as compile-time exception bz there exception are Checked at compile-time 
+    by using compiler.
+        ClassNotFoundException
+        IOException
+        SQLException
+        FileNotFoundException
+Unchecked Exception ?
+    Unchecked exception are just opposite to the Checked exception the compile will not check there exception
+at compile-time.
+        NullPointerException
+        ArrayIndexOutOfBoundsException
+        IllegalArgumentException
+        IllegalStateException
+        ArithmeticException
+        ClassCastException
+
+Custom Exception ?
+        Custom Exception is user-defined exception created by extending the Exception or RuntimeException class.
+        class MyException extends Exception{
+            public MyException(String message){
+                super(message);
+            }
+        }   
+
+File Handling ?
+    File handling is the process of creating, reading, writing, and manipulating files in java.
+    it is done using java.io package.
+
+            FileReader                                  BufferedReader
+    reads data directly from file                   reads data from file using buffer
+    slower than BufferedReader                      faster than FileReader
+
+Thread ?
+    Thread is a lightweight process that can allow concurrent execution of program.
+    it is used to perform multiple tasks simultaneously.
+Multithreading ?
+    Execution of multiple threads simultaneously within a single program.
+
+    Thread Life Cycle
+        New -> Runnable -> Running -> Blocked/Waiting -> Terminated
+
+        sleep -> Thread.sleep() method is used to pause the execution of thread for specified time.
+        join -> Thread.join() method is used to wait for a thread to complete its execution before proceeding with the next thread.
+        yeild -> Thread.yield() method is used to pause the execution of current thread and allow other thread to execute.
+        start -> Thread.start() method is used to start the execution of thread.
+
+Synchronization ?
+    Synchronization is Keyword.
+    Synchronization is used to overcome data inconsistency problem.
+
+
+Wrapper Class ?
+    Wrapper class is used to convert primitive data type into object and vice versa.
+
+Garbage Collector
+    Garbage Collector is a automatic memory management process that is used to collect unreferenced objects or unused memory from the heap.
+    1.Nulling object reference
+    2.reassigning object reference
+    3.creating anonymous object
+    4.creating object inside the method
+    System.gc() -> Suggests the JVM to perform garbage collection, but it does not guarantee that it will happen immediately.
+
+Collection Framework ? JCF
+    Collection is ready-made architecture 
+    Collection framework is a set of classes and interfaces that provide data structure and algorithms to store and manipulate data in java.
+    java.util package provides collection framework.
+    list -> ArrayList, LinkedList, Vector
+    queue -> PriorityQueue,Deque, ArrayDeque
+    set -> HashSet, LinkedHashSet, TreeSet
+
+        add() -> adds an element to the collection.
+        remove() -> removes an element from the collection.
+        contains() -> checks if an element is present in the collection.
+        size() -> returns the number of elements in the collection.
+        isEmpty() -> checks if the collection is empty.
+        clear() -> removes all elements from the collection.
+
+list ?
+    List is an ordered collection that allows duplicate elements and maintain the insertion order.
+ArrayList
+    ArrayList uses a dynamic array
+    It allows duplicate elements and maintains insertion order.
+    Used for fast data retrieval (accessing elements)
+LinkedList
+    LinkedList uses a doubly linked list.
+    it is not synchronized and allows sequential access to elements.
+    Efficient for insertion and deletion operations
+Vector
+    Vector uses a dynamic array.
+    it is synchronized and allows duplicate elements and maintains insertion order.
+    Used for thread-safe operations but slower than ArrayList.
+    default capacity 10
+Stack
+    Stack is a last-in-first-out (LIFO) data structure.
+    it is synchronized and allows duplicate elements.
+    Used for storing temporary data and performing backtracking operations.
+        push() -> adds an element to the top of the stack.
+        pop() -> removes and returns the top element of the stack.
+        peek() -> returns the top element of the stack without removing it.
+        search() -> returns the 1-based position of the first occurrence of an element in the stack, or -1 if not found.
+
+Set
+    Set is a collection that does not allow duplicate elements and does not maintain insertion order.
+HashSet
+    HashSet uses a hash table for storage.
+LinkedHashSet
+    LinkedHashSet uses a hash table and a linked list for storage.
+TreeSet
+    TreeSet uses a tree for storage.
+
+Queue
+    Queue is a collection that follows the first-in-first-out (FIFO) principle.
+
+Curser
+    Curser is an object that is used to iterate ,treverse, or retrive data form the collection or stream of object one by one.
+
+Iterator
+    Iterator is used Single directional curser.
+    using iterator we can iterator the collection of objects in forward direction only.
+        hasNext() -> returns true if there are more elements to iterate.
+        next() -> returns the next element in the iteration.
+        remove() -> removes the last element returned by the iterator.
+ListIterator
+    ListIterator is used for bidirectional cursor.
+    using ListIterator we can iterate the collection of objects in both forward and backward direction.
+        hasNext() -> returns true if there are more elements to iterate in the forward direction.
+        next() -> returns the next element in the iteration in the forward direction.
+        hasPrevious() -> returns true if there are more elements to iterate in the backward direction.
+        previous() -> returns the previous element in the iteration in the backward direction.
+        add() -> adds an element to the list at the current position of the iterator.
+        set() -> replaces the last element returned by next() or previous() with the specified element.
+
+Comparator 
+    Comparator is a functional interface that is used to compare two objects of the same class.
+    it is used to sort the collection of objects based on specific criteria.
+    compare() 
+        -1 -> first object is less than second object       asending order
+        0 -> first object is equal to second object         equal
+        1 -> first object is greater than second object     desending order
+Comparable
+    Comparable is a functional interface that is used to compare the current object with the specified object.
+    it is used to sort the collection of objects based on natural ordering.
+    compareTo()
+        -1 -> current object is less than specified object      asending order
+        0 -> current object is equal to specified object        equal
+        1 -> current object is greater than specified object    desending order
+
+
+                     Comparator                        Comparable
+            used for custom sorting                  used for natural sorting
+            compare() method is used to compare      compareTo() method is used to compare
+
+Java 8
+Lambda Expression
+    A lambda expression is a anonymous function that can be used to provide implementation of functional interface.
+Functional Interface
+    @FunctionalInterface is an annotation that used to indicate that the interface is a functional interface.
+    An interface with only one abstract method , we can have any number of default or static method in functional interface.
+Predicate
+    Predicate is a functional interface with only one argument and return boolean value.
+Stream
+    Stream is a sequence of elements supporting sequential and parallel aggregate operations.
+    Sequential Stream -> Process elements in order
+    Parallel Stream -> Process elements in parallel using multiple threads.
+    Flow
+        Collection -> Stream -> Intermediate Operations -> Terminal Operations 
+        Intermediate Operations -> filter(), map(), sorted()
+        Terminal Operations -> forEach(), collect(), reduce()
+optional Class
+    Optional is a container object which may or may not contain a non-null value.
+    it is used to avoid null pointer exception and provide better way to handle null values. 
+
+
+Questions:
+
+ what is java ?
+ what are key features of java ?
+ what is JVM,JRE,JDK ?
+ what is variable ?
+ what is static variable ?
+ what is non static variable ?
+ what is instances variable ?
+ what is local variable ?
+ what is method ?
+ what is access modifier ?
+ what is oops ?
+ what is class ?
+ what is object ?
+ what is constructor ?
+ what is inheritance ?
+ what is polymorphism ?
+ what is compile-time polymorphism ?
+ what is runtime polymorphism ?
+ what is 
