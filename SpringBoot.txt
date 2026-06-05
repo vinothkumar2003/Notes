@@ -1,0 +1,58 @@
+ what is Spring ?
+    Spring framework is a lightweight ,open source framework for building enterprise applications in Java.
+
+ what are key features of Spring framework ?
+    1. Invrsion of Control (IoC) 
+    2. Dependency Injection (DI)
+    3. Lightweight Framework
+    4. Aspect Oriented Programming (AOP)
+    5. MVC Framework
+    6. Transaction Management
+    7. Security Framework
+    8. Integration with support
+
+ what is Inversion of Control (IoC) ?
+  IoC is a design principle where the control of object creation and management is given to the Spring Container instead of the application code.
+
+ what is Dependency Injection (DI) ?
+   Dependency Injection is a design pattern that allows the creation of dependent objects outside of a class and provides those objects to a class in various ways. It promotes loose coupling and makes code more testable and maintainable.
+ 
+ what are types of Dependency Injection (DI) ?
+    1. Constructor Injection - Dependencies passed via constructor (recommended)
+    2. Setter Injection - Dependencies set via setter methods
+    3. Field Injection - Dependencies injected directly into fields (not recommended for testing)
+ 
+ what is MVC Framework in Spring ?
+   MVC is an architectural pattern that separates an application into Model (data/logic), View (UI), and Controller (request handler) for better organization and maintainability.
+ 
+ what is Bean in Spring ?
+   A Bean is an object that created, managed, and configured by the Spring IoC container.
+ 
+ what are lifecycle of bean?
+   1. Bean Instantiation  - Bean is created
+   2. Dependency Injection - Dependencies are injected into the bean
+   3. Initialization - Bean is initialized (e.g., @PostConstruct)
+   4. Bean Ready for Usage - Bean is used by the application
+   5. Destruction - Bean is destroyed (e.g., @PreDestroy)
+
+      @SpringBootApplication - main entry point for Spring Boot applications
+                  combination of @Configuration, @EnableAutoConfiguration, and @ComponentScan
+      @Bean: Declares a bean manually inside a configuration class.
+      @Component - marks a class as a Spring Bean 
+      @Configuration: Defines configuration classes.
+
+      @Controller - handles HTTP requests
+      @Service:  Used for service layer classes.
+      @Repository → Marks the class as a repository for database operations.
+      @RestController - returns JSON/XML responses
+      @RequestMapping - maps URLs to controller methods
+      @Autowired - to mark a constructor, field, or setter method for dependency injection. 
+
+      @Autowired is used to automatically inject a dependency (bean) into another bean. It enables automatic dependency injection by the Spring container and reduces manual object creation.
+
+      @Entity → Marks the class as a database entity.
+      @Table → Specifies the table name.
+      @Id → Marks the primary key.
+      @GeneratedValue → Auto-generates the primary key value.
+      @Column → Maps a field to a table column.
+      @Transient → Field is not stored in the database.

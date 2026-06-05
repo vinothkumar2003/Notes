@@ -24,10 +24,10 @@ variable ?
     in java varible is container that can store values.
 
 static variable ?
-    variable that are common to all objects of classes and belong to class itself.
+    variable that are common to all objects of class.
 
 non static variable ?
-    variable that belong to each individual instances of a class.
+    variable that are different for each object of class.
 
 instances variable?
     variable that inside the class and outside the method.
@@ -120,6 +120,9 @@ String ?
     String is collection or sequence of character that represented in text.
     String is keyword that string class object are ummutable meaning once create value we can't change the value.
 
+string is immutables ?
+    String is immutable in Java because once created its value cannot be changed. This improves security, thread safety,
+    and allows String Pool memory optimization.
 StringBuffer ?
     StringBuffer is collection or sequence of character that represented in text.
     StringBuffer is keyword that StringBuffer class object are mutable meaning once create value we can change the value.
@@ -148,9 +151,9 @@ Checked Exception ?
     Checked exception is also called as compile-time exception bz there exception are Checked at compile-time 
     by using compiler.
         ClassNotFoundException
+        FileNotFoundException
         IOException
         SQLException
-        FileNotFoundException
 Unchecked Exception ?
     Unchecked exception are just opposite to the Checked exception the compile will not check there exception
 at compile-time.
@@ -194,7 +197,9 @@ Multithreading ?
 Synchronization ?
     Synchronization is Keyword.
     Synchronization is used to overcome data inconsistency problem.
-
+why should use Synchronization ?
+    Synchronization is used to control the access of multiple thread to shared resource.
+    when multiple thread access the same resource at the same time it can cause data inconsistency problem.
 
 Wrapper Class ?
     Wrapper class is used to convert primitive data type into object and vice versa.
@@ -277,13 +282,6 @@ ListIterator
         add() -> adds an element to the list at the current position of the iterator.
         set() -> replaces the last element returned by next() or previous() with the specified element.
 
-Comparator 
-    Comparator is a functional interface that is used to compare two objects of the same class.
-    it is used to sort the collection of objects based on specific criteria.
-    compare() 
-        -1 -> first object is less than second object       asending order
-        0 -> first object is equal to second object         equal
-        1 -> first object is greater than second object     desending order
 Comparable
     Comparable is a functional interface that is used to compare the current object with the specified object.
     it is used to sort the collection of objects based on natural ordering.
@@ -291,6 +289,14 @@ Comparable
         -1 -> current object is less than specified object      asending order
         0 -> current object is equal to specified object        equal
         1 -> current object is greater than specified object    desending order
+
+Comparator 
+    Comparator is a functional interface that is used to compare two objects of the same class.
+    it is used to sort the collection of objects based on specific criteria.
+    compare() 
+        -1 -> first object is less than second object       asending order
+        0 -> first object is equal to second object         equal
+        1 -> first object is greater than second object     desending order
 
 
                      Comparator                        Comparable
@@ -309,13 +315,17 @@ Stream
     Stream is a sequence of elements supporting sequential and parallel aggregate operations.
     Sequential Stream -> Process elements in order
     Parallel Stream -> Process elements in parallel using multiple threads.
+    Sequentail stream 
+        the data process in one by one using single thread.
+    Parallel stream
+        data using multiple thread to improve performance for large data set.
     Flow
         Collection -> Stream -> Intermediate Operations -> Terminal Operations 
         Intermediate Operations -> filter(), map(), sorted()
         Terminal Operations -> forEach(), collect(), reduce()
 optional Class
     Optional is a container object which may or may not contain a non-null value.
-    it is used to avoid null pointer exception and provide better way to handle null values. 
+    it is used to avoid NullPointerException and provide better way to handle null values. 
 
 
 Questions:
@@ -330,6 +340,7 @@ Questions:
  what is local variable ?
  what is method ?
  what is access modifier ?
+ what is array ?
  what is oops ?
  what is class ?
  what is object ?
@@ -346,6 +357,7 @@ Questions:
  what is is a relationship ?
  what is has a relationship ?
  what is string ?
+ why string is immutable ?
  what is StringBuffer ?
  what is StringBuilder ?
  what is exception ?
@@ -375,8 +387,8 @@ Questions:
  what is curser ?
  what is iterator ?
  what is ListIterator ?
- what is comparator ?
  what is comparable ?
+ what is comparator ?
  what is lambda expression ?
  what is functional interface ?
  whtat is predicate ?
