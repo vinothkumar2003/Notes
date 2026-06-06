@@ -1,6 +1,12 @@
  what is Spring ?
     Spring framework is a lightweight ,open source framework for building enterprise applications in Java.
+ what is Spring Boot ?
+    Spring Boot is a project built on top of the Spring framework that simplifies the development of production-ready applications by providing auto-configuration, embedded servers.
 
+                    Spring                                                Spring Boot
+    Spring framework is a lightweight,open source framework   Spring Boot is a project built on top of the Spring framework 
+    for buildig enterprise applications in java.              that simplifies the development of production-ready applications by providing
+                                                              auto-configuration, embedded servers, and opinionated defaults.
  what are key features of Spring framework ?
     1. Invrsion of Control (IoC) 
     2. Dependency Injection (DI)
@@ -35,20 +41,23 @@
    4. Bean Ready for Usage - Bean is used by the application
    5. Destruction - Bean is destroyed (e.g., @PreDestroy)
 
-      @SpringBootApplication - main entry point for Spring Boot applications
-                  combination of @Configuration, @EnableAutoConfiguration, and @ComponentScan
-      @Bean: Declares a bean manually inside a configuration class.
-      @Component - marks a class as a Spring Bean 
+      @SpringBootApplication - Main Spring Boot application annotation that enables auto-configuration, component scanning, and configuration.
+                  
+      @Bean – Creates and registers a bean
+      @Component – Generic Spring bean.
       @Configuration: Defines configuration classes.
-
-      @Controller - handles HTTP requests
-      @Service:  Used for service layer classes.
-      @Repository → Marks the class as a repository for database operations.
-      @RestController - returns JSON/XML responses
+      @Controller - Handles HTTP requests and returns a View (HTML page, JSP, Thymeleaf)
+      @RestController - Handles HTTP requests and returns JSON/XML data directly.
+      @Service – Service layer bean.
+      @Repository – Data access layer bean.
       @RequestMapping - maps URLs to controller methods
       @Autowired - to mark a constructor, field, or setter method for dependency injection. 
 
       @Autowired is used to automatically inject a dependency (bean) into another bean. It enables automatic dependency injection by the Spring container and reduces manual object creation.
+
+      @RequestParam – Gets query parameter values.
+      @PathVariable – Gets values from URL path.
+      @RequestBody – Reads request body data.
 
       @Entity → Marks the class as a database entity.
       @Table → Specifies the table name.
